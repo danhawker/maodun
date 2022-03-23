@@ -1,0 +1,11 @@
+- op: replace
+  path: /spec/storageDeviceSets/0/dataPVCTemplate/spec/storageClassName
+  value: gp2
+
+- op: replace
+  path: /spec/storageDeviceSets/0/dataPVCTemplate/spec/resources/requests/storage
+  value: 512Gi
+
+- op: replace
+  path: /spec/storageDeviceSets/0/name
+  value: ocs-deviceset-0-gp2
